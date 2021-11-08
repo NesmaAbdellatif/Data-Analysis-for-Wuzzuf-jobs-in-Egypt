@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PopularSkills</title>
+</head>
+<body>
+<button onclick="window.location.href='homepage'"> Return Home </button>
+<div>
+  <table style="display: inline-block">
+    <thead>
+    <tr>
+      <th>Count</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row: ${messages}">
+      <td th:text="${row}" />
+    </tr>
+    </tbody>
+  </table>
+<table style="float: left">
+  <thead>
+  <tr>
+    <th>skills</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="row: ${message}">
+    <td th:text="${row}" />
+  </tr>
+  </tbody>
+</table>
+
+</div>
+</body>
+</html>

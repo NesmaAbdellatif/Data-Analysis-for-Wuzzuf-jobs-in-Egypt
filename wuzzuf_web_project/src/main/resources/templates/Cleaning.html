@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cleaning</title>
+</head>
+<body>
+<button onclick="window.location.href='homepage'"> Return Home </button>
+
+<table>
+    <thead>
+    <tr>
+        <th>Data Cleaning</th>
+    </tr>
+    <br>
+    <tr>
+        <th>count before cleaning , count after cleaning</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="count: ${message}">
+        <td th:text="${message[0]}">&nbsp;</td>
+        <td th:text="${message[1]}">&nbsp;</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

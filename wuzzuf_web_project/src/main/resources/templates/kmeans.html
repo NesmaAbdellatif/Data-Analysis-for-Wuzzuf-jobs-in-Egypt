@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Kmeans</title>
+</head>
+<body>
+<button onclick="window.location.href='homepage'"> Return Home </button>
+
+<table>
+  <thead>
+  <tr>
+    <th>Job Title</th>
+    <th>Company</th>
+    <th>Location</th>
+    <th>Type</th>
+    <th>Level</th>
+    <th>Years Exp</th>
+    <th>Country</th>
+    <th>YearsExpIndex</th>
+    <th>TitleIndexed</th>
+    <th>CompanyIndexed</th>
+    <th>cluster</th>
+    <th>Skills</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="datarow : ${message}">
+    <td th:text="${datarow[0]}">&nbsp;</td>
+    <td th:text="${datarow[1]}">&nbsp;</td>
+    <td th:text="${datarow[2]}">&nbsp;</td>
+    <td th:text="${datarow[3]}">&nbsp;</td>
+    <td th:text="${datarow[4]}">&nbsp;</td>
+    <td th:text="${datarow[5]}">&nbsp;</td>
+    <td th:text="${datarow[6]}">&nbsp;</td>
+    <td th:text="${datarow[7]}">&nbsp;</td>
+    <td th:text="${datarow[8]}">&nbsp;</td>
+    <td th:text="${datarow[9]}">&nbsp;</td>
+    <td th:text="${datarow[10]}">&nbsp;</td>
+    <td th:text="${datarow[11]}">&nbsp;</td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count the jobs </title>
+</head>
+<body>
+<button onclick="window.location.href='homepage'"> Return Home </button>
+
+    <h1>4. Count the jobs for each company and display that in order
+      (What are the most demanding companies for jobs?)</h1>
+    <table>
+      <thead>
+      <tr>
+        <th>Job Title</th>
+        <th>Company</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr th:each="datarow : ${messages}">
+        <td th:text="${datarow[0]}">&nbsp;</td>
+        <td th:text="${datarow[1]}">&nbsp;</td>
+      </tr>
+      </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Summary</title>
+</head>
+<body>
+<button onclick="window.location.href='homepage'"> Return Home </button>
+
+<table>
+  <thead>
+  <tr>
+    <th>Summary of Data</th>
+  </tr>
+  <br>
+  <tr>
+    <th>Job Title, Company, Location, Type, Level, Years Exp, Country, Skills</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="summary: ${message}">
+    <td th:text="${summary}">&nbsp;</td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
